@@ -1,6 +1,6 @@
 # Modelo Entidad–Relación de Farmacia  
 
-Este documento describe el modelo entidad–relación diseñado para gestionar la información de un sistema de farmacias. Incluye la descripción de las entidades, sus atributos, las relaciones entre ellas y las restricciones semánticas correspondientes.  
+Readme Exigido
 
 ---
 
@@ -78,9 +78,6 @@ Este documento describe el modelo entidad–relación diseñado para gestionar l
    - Un laboratorio **(1,N)** fabrica muchos medicamentos.  
    - Cada medicamento es producido por un único laboratorio **(1,1)**.  
 
-6. **Laboratorio – Persona de Contacto**  
-   - Un laboratorio puede tener asociada una persona de contacto **(1,1)**.  
-   - Cada persona de contacto está ligada a un laboratorio específico.  
 
 ---
 
@@ -89,10 +86,4 @@ Este documento describe el modelo entidad–relación diseñado para gestionar l
 - **Restricción de stock**: El atributo `Stock` de un medicamento nunca puede ser negativo.  
 - **Restricción de precio**: El `Precio` debe ser mayor que 0.  
 - **Relación Compra–Cliente**: Una compra no puede existir sin estar asociada a un cliente válido.  
-- **Medicamento único en familia**: Cada medicamento pertenece únicamente a una familia.  
-- **Laboratorio responsable**: Todo medicamento debe estar vinculado a un laboratorio que lo fabrica.  
 - **Persona de contacto**: Cada laboratorio debe tener al menos una persona de contacto registrada.  
-
----
-
-✅ Este modelo asegura la correcta gestión de clientes, compras, medicamentos, farmacias y laboratorios, garantizando integridad y consistencia en la base de datos.  
